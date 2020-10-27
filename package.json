@@ -20,7 +20,10 @@
   "homepage": "https://github.com/GabrieIl/mentions_api#readme",
   "dependencies": {
     "debug": "^4.2.0",
-    "express": "^4.17.1"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "mongoose": "^5.10.10"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
