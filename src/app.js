@@ -14,7 +14,7 @@ app.use(express.urlencoded({extended: true}))
 
 
 // Database connection
-mongoose.connect('mongodb://root:awsd2357@localhost:27017/mentions?authSource=admin', {
+mongoose.connect(process.env.DATABASE_CONNECTION_STRING, {
     useUnifiedTopology: true,
     useFindAndModify: true,
     useNewUrlParser: true,
