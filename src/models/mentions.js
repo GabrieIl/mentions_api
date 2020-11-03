@@ -6,7 +6,6 @@ const schema = new Schema({
     friend: {
         type: String,
         require: true,
-        trim: true
     },
     mention: {
         type: String,

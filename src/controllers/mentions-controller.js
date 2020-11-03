@@ -33,3 +33,15 @@ exports.createMention = async (req, res) => {
         res.status(500).send({message: 'Failed to create a new mention.'})
     }
 }
+
+
+// Delete mention
+exports.deleteMention = async (req, res) => {
+    try {
+        const result = await repository.deleteMention(req.body)
+        res.status(200).send(result)
+    }
+    catch (e) {
+        res.status(400).send({message: `Error: ${e}`})
+    }
+}
